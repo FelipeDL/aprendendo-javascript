@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprdendo JavaScript</title>
+
+    <style>
+        h1{
+            margin-left: 00px;
+        }
+        
+        body{
+
+            
+
+            background-color: rgb(69, 148, 148);
+        }
+
+        div#n1{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left: 10px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n2{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left: 65px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n3{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:120px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n4{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:10px;
+            margin-top: 5px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n5{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:65px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n6{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left: 120px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n7{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:10px;
+            margin-top: 5px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n8{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:65px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n9{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left: 120px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#n0{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:65px;
+            margin-top: 5px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#expon{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:120px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#somar{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:175px;
+            margin-top: -175px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#subtrair{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:175px;
+            margin-top: 5px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#multi{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:175px;
+            margin-top: 5px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#dividir{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:175px;
+            margin-top: 5px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+        div#branco{
+            background-color: white;
+            width: 50px;
+            height: 40px;
+            margin-left:10px;
+            margin-top: -40px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+
+        div#resultado{
+            background-color: white;
+            width: 120px;
+            height: 40px;
+            margin-left:250px;
+            margin-top: -110px;
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Calculadora Online</h1>
+    <div id = n1>1</div>
+    <div id = n2>2</div>
+    <div id = n3>3</div>
+    <div id = n4>4</div>
+    <div id = n5>5</div>
+    <div id = n6>6</div>
+    <div id = n7>7</div>
+    <div id = n8>8</div>
+    <div id = n9>9</div>
+    <div id = n0>0</div>
+    <div id = somar>+</div>
+    <div id = subtrair>-</div>
+    <div id = multi>*</div>
+    <div id = dividir>/</div>
+    <div id = expon>x^</div>
+    <div id = branco></div>
+    <div id =resultado>0</div>
+
+    <script>
+
+        var n1 = window.document.getElementById ('n1')
+
+        n1.addEventListener('click',clicar)
+        n1.addEventListener('mouseout', sair)
+        n1.addEventListener('mouseenter', entrar)
+
+        var n2 = window.document.getElementById ('n2')
+
+        n2.addEventListener('click',clicar)
+        n2.addEventListener('mouseout', sair)
+        n2.addEventListener('mouseenter', entrar)
+
+        
+        
+       function clicar() {
+
+           
+
+            n1.style.background= 'gray'
+            n2.style.background= 'gray'
+       }
+       
+       function sair() {
+
+            n1.style.background= 'white'
+            n2.style.background= 'white'
+
+       }
+       function entrar() {
+
+            n1.style.background= 'gray'
+            n2.style.background= 'gray'
+       }
+        
+       
+
+    </script>
+
+    
+</body>
+</html>
