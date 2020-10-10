@@ -209,7 +209,7 @@
 
     <script>
 
-        var n1 = window.document.getElementById ('n1')
+        var n1 = Number(window.document.getElementById ('n1').value)
 
         n1.addEventListener('click',clicar)
         n1.addEventListener('mouseout', sair)
@@ -221,6 +221,9 @@
         n2.addEventListener('mouseout', sair)
         n2.addEventListener('mouseenter', entrar)
 
+        var res = window.document.getElementById('resultado')
+
+        res.innerText = n1
         
         
        function clicar() {
