@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprdendo JavaScript</title>
+
+    <link rel="stylesheet" href="ex008.css">
+
+   
+</head>
+<body>
+    <h1>Calculadora Online</h1>
+
+
+    <div id ="Calculadora">
+
+        <input type="text" id="visor" name="visor">
+
+   
+    
+        <div id="line1">
+
+            <input type="button" value="1" id="txn1" onclick="botao(value)">
+            <input type="button" value="2" id="txn2" onclick="Selecionar2()">
+            <input type="button" value="3" id="txn3" onclick="Selecionar3()" >
+            <input type="button" value="+" id="somar" >
+
+        </div>
+
+        <div id ="line2">
+            <input type="button" value="4" id="txn4" onclick="Selecionar4()">
+            <input type="button" value="5" id="txn5" onclick="Selecionar5()">
+            <input type="button" value="6" id="txn6" onclick="Selecionar6()">
+            <input type="button" value="-" id="subtrair">
+
+
+        </div>
+
+        <div id="line3">
+
+            <input type="button" value="7" id="txn7" onclick="Selecionar7()">
+            <input type="button" value="8" id="txn8" onclick="Selecionar8()">
+            <input type="button" value="9" id="txn9" onclick="Selecionar9()">
+            <input type="button" value="/" id="dividir">
+
+
+        </div>
+
+        <div id="line4">
+
+            <input type="button" value=" " id="branco">
+            <input type="button" value="0" id="txn0" onclick="Selecionar0()">
+            <input type="button" value="x^" id="expon">
+            <input type="button" value="/" id="multi">
+
+
+        </div>
+    
+    </div>
+
+
+    <script src="ex008.js">
+    
+
+    </script>
+
+    
+</body>
+</html>
